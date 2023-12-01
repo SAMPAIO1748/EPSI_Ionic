@@ -13,8 +13,68 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-card  color="success">
+    <ion-card-header>
+      <ion-card-title>Hello Word</ion-card-title>
+      <div style="width: 100%; border-top: 1px solid #d4d4d4; margin: 8px 0;"></div>
+      <ion-card-subtitle>Welcome to my world</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-icon name="home" size="large"></ion-icon>
+      <ion-icon name="thumbs-up" size="large"></ion-icon>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+     Minus rerum totam officiis architecto.
+     Pariatur ipsa quos quisquam esse, itaque a minus nam harum, eum ipsum rem id magnam ut debitis.
+    </ion-card-content>
+  </ion-card>
+
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Fugiat atque voluptate temporibus neque quae, 
+    sint hic nisi minima maxime omnis corrupti asperiores repellat optio cupiditate voluptatum reprehenderit.
+    Itaque, tenetur asperiores.
+  </p>
+
+  <ion-img src="/assets/images/01.jpg"></ion-img>
+
+  <audio src="/assets/audio/evier.wav" controls></audio>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rrmUk2YUm14?si=yHrxlRQPRXBD2Fi5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <ion-button color="danger" routerLink="/page-name" expand="block">Go To Page</ion-button>
+
+  <ion-list>
+    <ion-item>
+        <ion-card-title>Titre de la liste</ion-card-title>
+    </ion-item>
+    <ion-item>
+        <ion-label>Item Un</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-label>Item Deux</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-label>Item Trois</ion-label>
+    </ion-item>
+    <ion-item>
+        <ion-label>Item Quatre</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-item routerLink="/contact">
+        <ion-icon slot="start" name="man" color="danger"></ion-icon>
+        <ion-label>Menu One</ion-label>
+    </ion-item>
+    <ion-item routerLink="/about">
+        <ion-icon slot="start" name="book" color="danger"></ion-icon>
+        <ion-label>Menu Two</ion-label>
+    </ion-item>
+    <ion-item routerLink="/page3">
+        <ion-icon slot="start" name="heart" color="danger"></ion-icon>
+        <ion-label>Menu Three</ion-label>
+    </ion-item>
+</ion-list>
+
+
 </ion-content>
